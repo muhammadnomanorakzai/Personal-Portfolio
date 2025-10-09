@@ -1,0 +1,245 @@
+/* About Intro Section */
+.about-intro {
+    margin: 0 auto 3rem;
+    padding: 0;
+    max-width: 800px;
+    border-radius: 16px;
+    background: rgba(25, 25, 35, 0.8);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(255, 1, 79, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.about-intro:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(255, 1, 79, 0.2);
+}
+
+.content-wrapper {
+    padding: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Gradient Border Elements */
+.border-gradient {
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.15s ease-out;
+    pointer-events: none;
+}
+
+.border-gradient.top {
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 2px;
+    width: 60%;
+    background: linear-gradient(90deg, transparent, #FF014F, transparent);
+}
+
+.border-gradient.right {
+    top: 20%;
+    right: 0;
+    bottom: 20%;
+    width: 2px;
+    height: 60%;
+    background: linear-gradient(0deg, transparent, #FF014F, transparent);
+}
+
+.border-gradient.bottom {
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    height: 2px;
+    width: 60%;
+    background: linear-gradient(90deg, transparent, #FF014F, transparent);
+}
+
+.border-gradient.left {
+    top: 20%;
+    left: 0;
+    bottom: 20%;
+    width: 2px;
+    height: 60%;
+    background: linear-gradient(0deg, transparent, #FF014F, transparent);
+}
+
+/* Content Styling */
+.intro-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.title-accent {
+    color: #FF014F;
+    font-weight: 700;
+}
+
+.intro-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.intro-list li {
+    position: relative;
+    padding-left: 30px;
+    /* Space for bullet */
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+.intro-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #FF014F;
+    border-radius: 50%;
+    box-shadow:
+        0 0 3px #FF014F,
+        0 0 6px #FF014F;
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 3px #FF014F,
+            0 0 6px #FF014F;
+        transform: translateY(-50%) scale(1);
+    }
+
+    50% {
+        box-shadow:
+            0 0 6px #FF014F,
+            0 0 10px #FF014F;
+        transform: translateY(-50%) scale(1.2);
+    }
+}
+
+
+.text-highlight {
+    color: #FF014F;
+    font-weight: 500;
+    position: relative;
+}
+
+.text-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #FF014F;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.text-highlight:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.skill-tag {
+    display: inline-block;
+    color: #ff4d6d;
+    padding: 0.2rem 0;
+    font-size: 0.95em;
+    margin: 0 2px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.skill-tag::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ff4d6d;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.skill-tag:hover::after {
+    transform: scaleX(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        text-align: left;
+        padding: 0;
+    }
+
+    .border-gradient.top,
+    .border-gradient.bottom {
+        left: 15%;
+        right: 15%;
+        width: 70%;
+    }
+
+    .border-gradient.right,
+    .border-gradient.left {
+        top: 15%;
+        bottom: 15%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-wrapper{
+        padding: 1.2rem;
+    }
+    .intro-list li{
+        font-size: 0.9rem;
+    }
+    .intro-header{
+        margin-bottom: .5rem;
+    }
+    .intro-list li{
+        padding-left: 18px;
+    }
+    .intro-list li::before {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .section-title{
+        font-size: 1.2rem;
+        margin-bottom: 23px;
+    }
+    .intro-list li{
+        font-size: 0.8rem;
+    }
+}

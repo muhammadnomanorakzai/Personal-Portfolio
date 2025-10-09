@@ -1,0 +1,107 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    color: #fff;
+}
+
+#root {
+    width: 100%;
+    max-width: 1366px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sideContainer {
+    width: 250px;
+}
+
+.mainContainer {
+    width: 84%;
+    position: relative;
+    z-index: 90;
+}
+.shadowEffect{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    box-shadow: 0 0 110px 50px #ff0055;
+}
+/* ............  Smooth Scroll  ............. */
+html {
+    scroll-behavior: smooth;
+  }  
+
+/* ...........  Cursor Effect  ......................... */
+.cursor-shadow {
+    position: fixed;
+    box-shadow: 0 0 200px 150px #ff014d2c;
+    pointer-events: none; /* So it doesn't interfere with clicks */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+
+/* .............  CLients  ............ */
+#clients{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+
+/* .............  Features  ............ */
+#features{
+    padding: 50px 0;
+}
+
+/* .............  Features  ............ */
+#experience{
+    padding: 50px 0;
+}
+
+@media (max-width: 1100px) {
+    .mainContainer{
+        width: 80%;
+    }
+    #contact .contact-title{
+        font-size: 42px;
+    }
+}
+@media (max-width: 991px) {
+    .mainContainer{
+        width: 76%;
+    }
+}
+@media (max-width: 850px) {
+    .mainContainer{
+        width: 100%;
+    }
+}

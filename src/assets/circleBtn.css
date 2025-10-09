@@ -1,0 +1,55 @@
+/* ........... circle-btn ..........*/
+.circle-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    text-align: center;
+    position: relative;
+}
+
+.circle-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #948b8e94;
+    z-index: -2;
+}
+
+.circle-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    background-color: #ff014dd9;
+    border-radius: 50%;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.circle-btn:hover::after {
+    top: 0%;
+    left: 0%;
+    width: 40px;
+    height: 40px;
+}
+
+.circle-btn i {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 400px) {
+    .circle-btn{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,146 @@
+
+.experienceCard {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    z-index: 10;
+    color: #fff;
+    width: 450px;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 20px 10px;
+    
+}
+.experienceCard * {
+    position: relative;
+    z-index: 1;
+    /* background-clip: padding-box; Ensures shadow inside rounded corners */
+}
+.experienceCard::after {
+    content: "";
+    position: absolute;
+    background: rgb(24,24,24);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 20px 0.5px #FF014FA8;
+    z-index: -1;
+}
+
+.experienceCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(317deg, rgba(255, 1, 77, 0.623) 0%, rgba(24,24,24,1) 35%, rgba(24,24,24,1) 100%);
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.experienceCard:hover::before {
+    opacity: 1;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Heading */
+.experienceCard h4 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Rajdhani", sans-serif;
+    transition: all 0.6s;
+}
+.experienceCard:hover h4{
+    color: #FF014F;
+}
+.experienceCard h3{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* Number Style */
+.experienceCard h4 span {
+    color: #aaa;
+    font-size: 20px;
+}
+
+/* Text */
+.experienceCard p {
+    font-size: 16px;
+    color: #aaa;
+    line-height: 1.2;
+}
+
+.experienceButtons{
+    padding: 20px 0 0 0;
+}
+.experienceButtons a{
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px 1px #FF014F;
+    transition: all .4s;
+}
+.experienceButtons a:hover{
+    background-color: #FF014F;
+}
+.experienceCard h4 i{
+    color: #FF014F;
+    margin-right: 10px;
+}
+
+
+.more-less-btn {
+    background: none;
+    border: none;
+    color: #FF014F;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: inherit;
+}
+
+.more-less-btn:hover {
+    text-decoration: underline;
+}
+
+ /* ..........  Animations  ........... */
+
+.experienceCard{
+    transform: translateX(100%);
+    transition: all 1.5s ease;
+    opacity: 0;
+}
+
+.experienceCard:nth-of-type(odd){
+    transform: translateX(-100%);
+}
+.experienceCard.showExperienceCard{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+@media (max-width: 450px) {
+    .experienceCard.showExperienceCard{
+        width: 100%;
+        padding: 25px 15px;
+    }
+    .experienceButtons a{
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+@media (max-width: 450px) {
+    .experienceButtons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

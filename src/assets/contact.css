@@ -1,0 +1,168 @@
+#contact {
+    background-color: #111;
+    padding: 50px;
+    border-radius: 10px;
+    width: 85%;
+    color: white;
+    margin: 30px auto;
+    transition: all .6s;
+    position: relative;
+    box-shadow: inset 0 0 10px 5px #ff014d65;
+    overflow: hidden;
+}
+
+#contact .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#contact .contact-info {
+    width: 290px;
+    font-family: "Rajdhani", sans-serif;
+}
+
+#contact .contact-subtitle {
+    color: #d01242;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+}
+
+#contact .contact-title {
+    color: #fff;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+#contact .contact-title span {
+    display: block;
+}
+
+#contact .contact-description {
+    margin-top: 10px;
+    color: #9f9f9f;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#contact .contact-form {
+    width: 470px;
+}
+
+#contact .input-group {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+#contact input,
+textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #111;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 0 2px grey;
+    outline: none;
+}
+#contact input:focus,
+textarea:focus{
+    box-shadow: 0 0 2px #d01242;
+}
+
+#contact textarea {
+    min-height: 100px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+#contact .submit-btn {
+    background: #FF014F;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#contact .submit-btn:hover {
+    background: #d01242;
+}
+
+#formHandling{
+    font-size: 13px;
+    padding: 5px 0;
+    color: #FF014F;
+}
+
+/* Animations */
+.contactCard{
+    transform: translateX(100%);
+    transition: all 0.8s ease;
+    opacity: 0;
+}
+
+.contactCard:nth-of-type(odd){
+    transform: translateX(-100%);
+}
+
+.contactCard.showContactCard{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    #contact .contact-title{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 991px) {
+    #contact{
+        padding: 20px;
+        width: 97%;
+    }
+    #contact .contact-title{
+        font-size: 41px;
+    }
+}
+
+@media (max-width: 650px) {
+    #contact .contact-container{
+        flex-direction: column;
+    }
+    #contact .contact-info{
+        width: 100%;
+    }
+    #contact .contact-title span{
+        display: inline;
+    }
+    #contact .contact-form{
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    #contact .contact-info{
+        width: 280px;
+    }
+    #contact .contact-title{
+        font-size: 39px;
+    }
+    #contact .input-group{
+        margin: 10px 0;
+        flex-direction: column;
+    }
+}

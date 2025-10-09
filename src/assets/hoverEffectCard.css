@@ -1,0 +1,105 @@
+
+.hoverEffectCard {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    z-index: 10;
+}
+.hoverEffectCard * {
+    position: relative;
+    z-index: 1;
+}
+.hoverEffectCard::after {
+    content: "";
+    position: absolute;
+    background: rgb(24,24,24);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 20px 0.5px #FF014FA8;
+    z-index: -1;
+}
+
+.hoverEffectCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(317deg, rgba(255, 1, 77, 0.623) 0%, rgba(24,24,24,1) 35%, rgba(24,24,24,1) 100%);
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.hoverEffectCard:hover::before {
+    opacity: 1;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.hoverEffectCard {
+    color: #fff;
+    width: 450px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 10px;
+    /* background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(246,0,76,1) 35%, rgba(0,212,255,0) 100%); */
+}
+
+/* Heading */
+.hoverEffectCard h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Rajdhani", sans-serif;
+    transition: all 0.6s;
+}
+.hoverEffectCard:hover h3{
+    color: #FF014F;
+}
+
+/* Number Style */
+.hoverEffectCard h3 span {
+    color: #aaa;
+    font-size: 20px;
+}
+
+/* Text */
+.hoverEffectCard p {
+    font-size: 16px;
+    color: #aaa;
+    line-height: 2;
+}
+
+/* ..........  Animations  ........... */
+
+.hoverEffectCard{
+    transform: translateX(100%);
+    transition: all 1.5s ease;
+    opacity: 0;
+}
+
+.hoverEffectCard:nth-of-type(odd){
+    transform: translateX(-100%);
+}
+.hoverEffectCard.showHoverEffectCard{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 450px) {
+    .hoverEffectCard{
+        width: 100%;
+        padding: 30px;
+    }
+    .hoverEffectCard p{
+        font-size: 15px;
+    }
+}

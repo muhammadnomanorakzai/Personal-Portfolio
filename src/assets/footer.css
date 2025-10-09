@@ -1,0 +1,210 @@
+#footer {
+    background-color: #111;
+    color: white;
+    padding: 30px 30px;
+    overflow: hidden;
+}
+
+#footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+#footer .footer-contact {
+    width: 310px;
+}
+
+#footer .footer-logo {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Rajdhani", sans-serif;
+}
+
+#footer .footer-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 50px;
+    font-family: "Rubik", sans-serif;
+}
+
+#footer .footer-title span {
+    font-family: "Rajdhani", sans-serif;
+}
+
+#footer .email-subscribe {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #333;
+}
+/* #footer .email-subscribe:active{
+    border-bottom: 2px solid #ff0055;
+} */
+
+.email-subscribe input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 0;
+    width: 100%;
+    outline: none;
+}
+
+#footer .email-subscribe button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#footer .footer-links h4,
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#footer .footer-links ul,
+.footer-contact ul {
+    line-height: 44px;
+    list-style: none;
+    padding: 0;
+}
+
+#footer .footer-links ul li a,
+.footer-contact ul li {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: all .4s;
+}
+
+#footer .footer-links ul li a:hover {
+    color: #ff0055;
+}
+
+#footer .footer-contact ul li i {
+    margin-right: 10px;
+    color: #ff0055;
+}
+
+#footer .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#footer .social-icons a {
+    color: #fff;
+    font-size: 18px;
+    transition: all .4s;
+}
+
+#footer .social-icons a:hover {
+    color: #ff0055;
+}
+
+#footer .footer-bottom {
+    color: #aaa;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    font-size: 14px;
+}
+
+#footer .footer-bottom span {
+    color: #fff;
+}
+
+#footer .footer-links-bottom a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+#footer #formHandling {
+    padding: 0;
+}
+
+.footer-container {
+    transform: translateY(100px);
+    transition: all 0.8s ease;
+    opacity: 0;
+}
+
+.footer-container.showFooter {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    #footer{
+        padding: 30px 10px;
+    }
+    #footer .footer-left{
+        width: 235px;
+    }
+    #footer .footer-title{
+        font-size: 35px;
+    }
+    #footer .footer-links h4, .footer-contact h4{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    #footer .footer-links ul li a{
+        font-size: 15px;
+    }
+    #footer .footer-contact{
+        width: 240px;
+        font-size: 15px;
+    }
+    #footer .footer-contact ul li i{
+        margin-right: 3px;
+    }
+    .footer-links-bottom{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    #footer .footer-container{
+        justify-content: center;
+    }
+    #footer .footer-left{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #footer .footer-links{
+        margin-right: 30px;
+    }
+    #footer .footer-bottom{
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+}
+@media (max-width: 450px) {
+    #footer .footer-container{
+        flex-direction: column;
+    }
+    #footer .footer-links{
+        margin: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid #9f9f9f;
+    }
+    #footer .footer-contact{
+        text-align: center;
+        width: 100%;
+    }
+    #footer .social-icons{
+        justify-content: center;
+    }
+}

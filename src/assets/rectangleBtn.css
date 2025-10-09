@@ -1,0 +1,38 @@
+.portfolio-btn {
+    background-color: #ff014f;
+    color: white;
+    padding: 12px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.btn-text {
+    display: inline-block;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.portfolio-btn:hover .btn-text {
+    transform: translateX(-180%);
+}
+
+.portfolio-btn .btn-text::before {
+    content: var(--btn-text);
+    position: absolute;
+    transform: translateX(180%);
+    white-space: nowrap;
+}
+
+
+.portfolio-btn:hover .btn-text {
+    transform: translateX(-180%);
+}
