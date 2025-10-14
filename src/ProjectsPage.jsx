@@ -5,7 +5,7 @@ import PagesHeader from "./PagesHeader";
 function ProjectsPage() {
   const cardsData = [
     {
-      image: "/cool-shop.PNG",
+      image: "/cool-shop.PNG",  
       heading: "Cool Shop – Fullstack Frontend React Product Store",
       description: "Built using JSX & CSS — smooth UI, and product components.",
       stack: ["React", "JSX", "CSS"],
