@@ -51,14 +51,13 @@ const Banner = () => {
         </p>
         <RectangleBtn
           content="Hire Me"
-          upwork="https://www.upwork.com/freelancers/~01c59fa5729e4b4345"
+          upwork="https://www.linkedin.com/in/muhammad-noman-7a3156339/"
           width="110px"
         />
       </div>
       <div className="image-container  animate__animated animate__fadeInRight animate__slower">
-        <h2 className="animatedH2">Frontend Developer</h2>
         <img
-          src="../public/images/WhatsApp_Image_2025-10-09_at_11.45.12_AM-removebg-preview.png"
+          src="./images/WhatsApp_Image_2025-10-09_at_11.45.12_AM-removebg-preview.png"
           alt="Person"
           className="person-img"
         />

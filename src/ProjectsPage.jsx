@@ -5,55 +5,65 @@ import PagesHeader from "./PagesHeader";
 function ProjectsPage() {
   const cardsData = [
     {
-      image: "/karmashop.PNG",
-      heading: "Karma Shop – Fullstack Frontend React Shoe Store",
-      description:
-        "Built using JSX & CSS — smooth UI, cart logic, and product components.",
+      image: "/cool-shop.PNG",
+      heading: "Cool Shop – Fullstack Frontend React Product Store",
+      description: "Built using JSX & CSS — smooth UI, and product components.",
       stack: ["React", "JSX", "CSS"],
-      links: ["https://karmashop.vercel.app", "LinkedIn"],
+      links: [
+        "https://elaborate-queijadas-9359fb.netlify.app/",
+        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_react-javascript-frontenddevelopment-activity-7377293192100102144-sJuk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
+      ],
+    },
+    {
+      image: "/api-call.PNG",
+      heading: "Routing Concept Nested Route,Protected Route,Api Calling",
+      description: "Built using JSX & CSS — smooth UI,",
+      stack: ["React", "JSX", "CSS"],
+      links: [
+        "https://fastidious-boba-29d14d.netlify.app/Register",
+        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_reactjs-webdevelopment-javascript-activity-7374356245002240000-Hr-b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
+      ],
     },
 
     {
-      image: "/toDoApp.PNG",
+      image: "/todo-app.PNG",
       heading: "To-Do List Web App with Login & Registration Authentication",
       description:
         "Functional To-Do List Web App with add, edit and delete features",
-      stack: ["HTML", "Bootstrap", "Javascript"],
+      stack: ["HTML", "TailWind Css", "React"],
       links: [
-        "https://todoappisrar.vercel.app",
+        "https://clever-cuchufli-44aee8.netlify.app/",
         // "https://tinyurl.com/4eh9zmum",
       ],
     },
     {
-      image: "/database.PNG",
-      heading: "Dynamic Registration Form with Database like feature",
-      description:
-        "Validates input and stores user data in a JS-powered UI database—fully frontend-based!",
-      stack: ["HTML", "Bootstrap", "Javascript"],
+      image: "/cal.PNG",
+      heading: "Calculator With clicks and Keyboard key",
+      description: "Functionality: Add, sub , mul, division, and so on!",
+      stack: ["HTML", "CSS", "Javascript"],
       links: [
-        "https://isrardatabasemanage.vercel.app",
+        "https://cerulean-sundae-f75acf.netlify.app/",
         // "https://tinyurl.com/ympy3pc4",
       ],
     },
     {
-      image: "/temperatureConvertor.PNG",
-      heading: "Neon Temperature Converter with JavaScript",
+      image: "/js-todo-app.PNG",
+      heading: "Todo App with JavaScript",
       description:
-        "Convert between Celsius, Fahrenheit, and Kelvin in real-time with a glowing, modern UI!",
+        "Functional To-Do List Web App with add, edit and delete features",
       stack: ["HTML", "Bootstrap", "Javascript"],
       links: [
-        "https://isrartemperatureconvertor.vercel.app",
+        "https://animated-capybara-3a53cc.netlify.app/",
         // "https://tinyurl.com/3xkxnnxb",
       ],
     },
     {
-      image: "/imageSlider.PNG",
-      heading: "Responsive Auto Image Slider with JavaScript",
-      description:
-        "A sleek, responsive carousel with smooth animations, auto/manual sliding, and interactive controls.",
-      stack: ["HTML", "CSS", "Javascript"],
+      image: "/school-web.PNG",
+      heading: "Responsive Website",
+      description: "A responsive Webiste Through Boostrape and html and CSS",
+      stack: ["HTML", "CSS", "Boostrape"],
       links: [
-        "https://imageslideisrar.vercel.app",
+        "https://stately-salamander-547032.netlify.app/",
         // "https://tinyurl.com/2rb6uvcc",
       ],
     },
@@ -69,45 +79,49 @@ function ProjectsPage() {
       ],
     },
     {
-      image: "/foodWeb.PNG",
-      heading: "FoodWeb – Responsive Food Website with HTML, CSS & JS",
+      image: "/rock-paper-scissors.PNG",
+      heading: "Rock paper scissors Game",
       description:
         "A fully responsive and visually appealing food website built using only HTML CSS and JS.",
       stack: ["HTML", "CSS", "JS"],
       links: [
-        "https://israrfoodweb.vercel.app",
+        "https://starlit-starburst-fda709.netlify.app/",
         // "https://tinyurl.com/ycyuf7b9",
       ],
     },
     {
-      image: "/bloomStar.PNG",
-      heading: "Bloom Star School – Responsive Educational Website",
-      description:
-        "A fully responsive and user-friendly school website designed for seamless browsing and information access.",
+      image: "/expense-tracker.PNG",
+      heading: "Expense Tracker",
+      description: "A fully responsive and user-friendly Expense Tracker.",
       stack: ["HTML", "CSS", "Javascript"],
       links: [
-        "https://bloomstarschool.vercel.app",
+        "https://stellular-axolotl-394e7b.netlify.app/",
         // "https://tinyurl.com/ymwyrpsv",
       ],
     },
     {
-      image: "/superiorShoes.PNG",
-      heading: "Superior Shoes – Responsive Online Shoe Store",
-      description:
-        "A sleek, user-friendly shoe store with smooth navigation, a functional cart, and responsive design.",
+      image: "/cards.PNG",
+      heading: "Card Functionlity",
+      description: "A sleek, user-friendly Card Functionlity Ui.",
       stack: ["HTML", "CSS", "Javascript"],
       links: [
-        "https://superiorshoes.vercel.app",
+        "https://magenta-kheer-55363a.netlify.app/",
         // "https://tinyurl.com/r2v4tudc",
       ],
     },
     {
-      image: "/codeWithHarry.PNG",
-      heading: "Code With Harry Website Clone",
-      description:
-        "A faithful clone of Code With Harry’s official website—showcasing a popular coding YouTuber’s style and content.",
+      image: "/one-page.PNG",
+      heading: "One page Website",
+      description: "A One Page Website Through Html And Css",
       stack: ["HTML", "CSS"],
-      links: ["https://codewithharryclony.vercel.app"],
+      links: ["https://calm-flan-3e0678.netlify.app/"],
+    },
+    {
+      image: "/cart.PNG",
+      heading: "Add to Cart Page",
+      description: "Add to Cart page Through Html And Css and Js",
+      stack: ["HTML", "CSS", "JavaScript"],
+      links: ["https://cosmic-kangaroo-05f40b.netlify.app/"],
     },
   ];
 

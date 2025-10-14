@@ -29,15 +29,15 @@ function Experience() {
   const experienceCards = [
     {
       icon: <i className="fa-solid fa-circle-dot fa-fade"></i>,
-      date: "2025-Present",
-      heading: "CSS and Javascript",
+      date: "2024-Present",
+      heading: "CSS and Javascript and React",
       description:
         "From 15th December 2024 to 15th February 2025, in Web and App Development course taught by Sir Osama at SMIT, a renowned institute for IT education, mastered CSS from fundamentals to advanced techniques, working on large-scale projects. During this period, gained proficiency in Git and GitHub, while also honing teamwork skills. From 15th February to 22nd March 2025, covered foundational topics of JavaScript, further strengthening web development expertise.",
       buttons: {
         links: [
-          "https://github.com/israrahmadtech/React-Projects",
-          "https://github.com/israrahmadtech/HTML-CSS-Javacsript-Projects",
-          "https://github.com/israrahmadtech/javascript-in-2025",
+          "https://github.com/muhammadnomanorakzai?tab=repositories",
+          "https://github.com/muhammadnomanorakzai?tab=repositories",
+          "https://github.com/muhammadnomanorakzai?tab=repositories",
         ],
         content: ["CSS", "Projects", "Javascript"],
       },
@@ -50,22 +50,22 @@ function Experience() {
         "In mid-2024, revisited JavaScript from scratch through a YouTube tutorial, progressing from the basics to advanced concepts like OOP. Applied knowledge by working on multiple JavaScript projects. By the end of 2024, enrolled in a Web and App Development course taught by Sir Osama (7 years of experience) at SMIT, a renowned institute for IT education. As part of the course, revisited HTML before the beginning of 2025 to strengthen foundational skills.",
       buttons: {
         links: [
-          "https://github.com/israrahmadtech/Complete-JavaScript-in-2024",
-          "https://github.com/israrahmadtech",
-          "https://saylaniwelfare.com/",
+          "https://github.com/muhammadnomanorakzai?tab=repositories",
+          "https://github.com/muhammadnomanorakzai?tab=repositories",
+
           "https://www.linkedin.com/in/xamqrexii/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bu0ccLaKCRaGnbRYWHlcSjw%3D%3D",
         ],
-        content: ["Javascript", "HTML", "SMIT", "Osama"],
+        content: ["Javascript", "HTML", "Osama"],
       },
     },
     {
       icon: <i className="fa-solid fa-circle-dot fa-fade"></i>,
-      date: "2024",
+      date: "2025",
       heading: "React Js",
       description:
-        'At the start of 2024, I began learning React.js through the YouTube tutorial "Chai aur React" by Sir Hitesh Choudhary on the "Chai aur Code" channel. The course focused on hands-on projects, providing practical experience. After completing the course, I worked on various React projects, building multiple web applications and refining my skills in frontend development. This hands-on approach helped me solidify my knowledge of React.js and modern web technologies',
+        'At the start of 2025, I began learning React.js through the YouTube tutorial "Chai aur React" by Sir Hitesh Choudhary on the "Chai aur Code" channel. The course focused on hands-on projects, providing practical experience. After completing the course, I worked on various React projects, building multiple web applications and refining my skills in frontend development. This hands-on approach helped me solidify my knowledge of React.js and modern web technologies',
       buttons: {
-        links: ["https://github.com/israrahmadtech"],
+        links: ["https://github.com/muhammadnomanorakzai?tab=repositories"],
         content: ["React Js"],
       },
     },
@@ -77,12 +77,11 @@ function Experience() {
         "Started learning HTML and CSS in 2023, building a solid foundation in web development through various projects. Then explored C++, focusing on algorithmic problem-solving for the International Olympiad in Informatics (IOI) competition. Transitioned to JavaScript, expanding skills in frontend development and creating interactive web applications, further enhancing expertise in modern web technologies and programming practices.",
       buttons: {
         links: [
-          "https://github.com/israrahmadtech/HTML-in-2023",
-          "https://github.com/israrahmadtech/CSS-in-2023",
-          "https://github.com/israrahmadtech/Complete-Cpp-in-2023",
-          "https://github.com/israrahmadtech/complete-javascript-in-2023",
+          "https://github.com/muhammadnomanorakzai?tab=repositories",
+          "https://github.com/muhammadnomanorakzai?tab=repositories",
+          "https://github.com/muhammadnomanorakzai?tab=repositories",
         ],
-        content: ["HTML", "CSS", "C++", "Javascript"],
+        content: ["HTML", "CSS", "Javascript"],
       },
     },
   ];
