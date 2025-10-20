@@ -5,13 +5,24 @@ import PagesHeader from "./PagesHeader";
 function ProjectsPage() {
   const cardsData = [
     {
-      image: "/cool-shop.PNG",  
+      image: "/cool-shop.PNG",
       heading: "Cool Shop – Fullstack Frontend React Product Store",
       description: "Built using JSX & CSS — smooth UI, and product components.",
       stack: ["React", "JSX", "CSS"],
       links: [
         "https://elaborate-queijadas-9359fb.netlify.app/",
         "https://www.linkedin.com/posts/muhammad-noman-7a3156339_react-javascript-frontenddevelopment-activity-7377293192100102144-sJuk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
+      ],
+    },
+    {
+      image: "/food.PNG",
+      heading: "Food House – Fullstack Frontend React Product Store",
+      description:
+        "Built using JSX & CSS,Tailwindcss — smooth UI, and product components.",
+      stack: ["React", "JSX", "CSS", "Tailwindcss"],
+      links: [
+        "https://wondrous-beignet-7d7aba.netlify.app/",
+        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_reactjs-frontenddevelopment-webdevelopment-activity-7384928634953891840-keVu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
       ],
     },
     {
