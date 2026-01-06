@@ -76,7 +76,7 @@ const Banner = () => {
           "reactLogo.png",
           "nodejs.png",
           "github.png",
-          "../public/images/database.PNG",
+          "database.PNG",
           "java-script.png",
         ].map((src, index) => (
           <img
