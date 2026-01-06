@@ -65,7 +65,7 @@ const Banner = () => {
       </div>
       <div className="image-container  animate__animated animate__fadeInRight animate__slower">
         <img
-          src="../public/images/Noman-removebg-preview.png"
+          src="./images/Noman-removebg-preview.png"
           alt="Person"
           className="person-img"
         />

@@ -41,7 +41,7 @@ function Sidebar() {
         {/* Profile Section */}
         <div className="profile animate__animated animate__fadeInLeft slower --animate-delay">
           <img
-            src="../public/images/Noman.png"
+            src="./images/Noman.png"
             alt="Noman's Profile Image"
             className="profile-img"
           />
