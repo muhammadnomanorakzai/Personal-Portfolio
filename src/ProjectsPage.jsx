@@ -5,37 +5,12 @@ import PagesHeader from "./PagesHeader";
 function ProjectsPage() {
   const cardsData = [
     {
-      image: "/cool-shop.PNG",
-      heading: "Cool Shop – Fullstack Frontend React Product Store",
-      description: "Built using JSX & CSS — smooth UI, and product components.",
-      stack: ["React", "JSX", "CSS"],
-      links: [
-        "https://elaborate-queijadas-9359fb.netlify.app/",
-        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_react-javascript-frontenddevelopment-activity-7377293192100102144-sJuk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
-      ],
+      image: "/sniping.PNG",
+      heading: "Places – Fullstack Frontend EJS Template Listings",
+      description: "Built using EJS & CSS — smooth UI, and Listings.",
+      stack: ["EJS", "MONGODB", "EXPRESS JS"],
+      links: ["https://airbnb-production-9f21.up.railway.app/listings"],
     },
-    {
-      image: "/food.PNG",
-      heading: "Food House – Fullstack Frontend React Product Store",
-      description:
-        "Built using JSX & CSS,Tailwindcss — smooth UI, and product components.",
-      stack: ["React", "JSX", "CSS", "Tailwindcss"],
-      links: [
-        "https://wondrous-beignet-7d7aba.netlify.app/",
-        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_reactjs-frontenddevelopment-webdevelopment-activity-7384928634953891840-keVu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
-      ],
-    },
-    {
-      image: "/api-call.PNG",
-      heading: "Routing Concept Nested Route,Protected Route,Api Calling",
-      description: "Built using JSX & CSS — smooth UI,",
-      stack: ["React", "JSX", "CSS"],
-      links: [
-        "https://fastidious-boba-29d14d.netlify.app/Register",
-        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_reactjs-webdevelopment-javascript-activity-7374356245002240000-Hr-b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
-      ],
-    },
-
     {
       image: "/todo-app.PNG",
       heading: "To-Do List Web App with Login & Registration Authentication",
@@ -48,13 +23,14 @@ function ProjectsPage() {
       ],
     },
     {
-      image: "/cal.PNG",
-      heading: "Calculator With clicks and Keyboard key",
-      description: "Functionality: Add, sub , mul, division, and so on!",
-      stack: ["HTML", "CSS", "Javascript"],
+      image: "/food.PNG",
+      heading: "Food House – Frontend React Product Store",
+      description:
+        "Built using JSX & CSS,Tailwindcss — smooth UI, and product components.",
+      stack: ["React", "Tailwindcss CSS"],
       links: [
-        "https://cerulean-sundae-f75acf.netlify.app/",
-        // "https://tinyurl.com/ympy3pc4",
+        "https://wondrous-beignet-7d7aba.netlify.app/",
+        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_reactjs-frontenddevelopment-webdevelopment-activity-7384928634953891840-keVu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
       ],
     },
     {
@@ -69,6 +45,39 @@ function ProjectsPage() {
       ],
     },
     {
+      image: "/cal.PNG",
+      heading: "Calculator With clicks and Keyboard key",
+      description: "Functionality: Add, sub , mul, division, and so on!",
+      stack: ["HTML", "CSS", "Javascript"],
+      links: [
+        "https://cerulean-sundae-f75acf.netlify.app/",
+        // "https://tinyurl.com/ympy3pc4",
+      ],
+    },
+
+    {
+      image: "/cool-shop.PNG",
+      heading: "Cool Shop – Frontend React Product Store",
+      description: "Built using JSX & CSS — smooth UI, and product components.",
+      stack: ["React", "CSS"],
+      links: [
+        "https://elaborate-queijadas-9359fb.netlify.app/",
+        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_react-javascript-frontenddevelopment-activity-7377293192100102144-sJuk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
+      ],
+    },
+
+    {
+      image: "/api-call.PNG",
+      heading: "Routing Concept Nested Route,Protected Route,Api Calling",
+      description: "Built using JSX & CSS — smooth UI,",
+      stack: ["React", "CSS"],
+      links: [
+        "https://fastidious-boba-29d14d.netlify.app/Register",
+        "https://www.linkedin.com/posts/muhammad-noman-7a3156339_reactjs-webdevelopment-javascript-activity-7374356245002240000-Hr-b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTq3esBgX1VY_YCPmeWH5ui7mefoxZ4Gxs",
+      ],
+    },
+
+    {
       image: "/school-web.PNG",
       heading: "Responsive Website",
       description: "A responsive Webiste Through Boostrape and html and CSS",
@@ -81,9 +90,8 @@ function ProjectsPage() {
     {
       image: "/zentucky.PNG",
       heading: "Zentucky Fried Chicken – Responsive Food Website",
-      description:
-        "A fully responsive, user-friendly site to explore menus and order delicious meals with ease!",
-      stack: ["HTML", "CSS", "Pixel Perfect", "Figma"],
+      description: "A fully responsive, user-friendly site to explore menus.",
+      stack: ["HTML", "CSS", "Figma"],
       links: [
         "https://zentuckyfriedchicken.vercel.app",
         // "https://tinyurl.com/467pb4fe",

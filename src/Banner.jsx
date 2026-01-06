@@ -46,29 +46,37 @@ const Banner = () => {
         </h1>
         <p className="description">
           I help businesses build their online presence with fast,
-          mobile-friendly websites using React.js - designed to attract
+          mobile-friendly websites using MERN Stack - designed to attract
           customers and showcase your brand.
         </p>
-        <RectangleBtn
-          content="Hire Me"
-          upwork="https://www.linkedin.com/in/muhammad-noman-7a3156339/"
-          width="110px"
-        />
+        <div style={{ display: "flex", gap: "15px" }}>
+          <RectangleBtn
+            content="Hire Me"
+            upwork="https://www.linkedin.com/in/muhammad-noman-7a3156339/"
+            width="110px"
+          />
+          <RectangleBtn
+            content="Download CV"
+            upwork="../public/files/MuhammadNomanCv.pdf"
+            width="160px"
+            download={true} // optional prop, RectangleBtn me handle kar lo
+          />
+        </div>
       </div>
       <div className="image-container  animate__animated animate__fadeInRight animate__slower">
         <img
-          src="./images/WhatsApp_Image_2025-10-09_at_11.45.12_AM-removebg-preview.png"
+          src="../public/images/Noman-removebg-preview.png"
           alt="Person"
           className="person-img"
         />
-        <h2 className="animatedH2">Frontend Developer</h2>
+        {/* <h2 className="animatedH2">Frontend Developer</h2> */}
       </div>
       <div className="langauesIcons animate__animated animate__fadeInLeft animate__slower">
         {[
           "reactLogo.png",
-          "html-5.png",
-          "css-3.png",
-          "bootstrapLogo.png",
+          "nodejs.png",
+          "github.png",
+          "../public/images/database.PNG",
           "java-script.png",
         ].map((src, index) => (
           <img
@@ -89,3 +97,21 @@ const Banner = () => {
 };
 
 export default Banner;
+
+// Home Page
+//  {
+//       icon: <i className="fa-solid fa-circle-dot fa-fade"></i>,
+//       date: "2024",
+//       heading: "Javascript and HTML",
+//       description:
+//         "In mid-2024, revisited JavaScript from scratch through a YouTube tutorial, progressing from the basics to advanced concepts like OOP. Applied knowledge by working on multiple JavaScript projects. By the end of 2024, enrolled in a Web and App Development course taught by Sir Osama (7 years of experience) at SMIT, a renowned institute for IT education. As part of the course, revisited HTML before the beginning of 2025 to strengthen foundational skills.",
+//       buttons: {
+//         links: [
+//           "https://github.com/muhammadnomanorakzai?tab=repositories",
+//           "https://github.com/muhammadnomanorakzai?tab=repositories",
+
+//           "https://www.linkedin.com/in/xamqrexii/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bu0ccLaKCRaGnbRYWHlcSjw%3D%3D",
+//         ],
+//         content: ["Javascript", "HTML", "Osama"],
+//       },
+//     },

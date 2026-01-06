@@ -2,16 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./assets/skills.css";
 
 const skills = [
-  { name: "HTML", level: "99%" },
+  { name: "HTML", level: "100%" },
   { name: "CSS", level: "95%" },
   { name: "Bootstrap", level: "100%" },
-  { name: "JavaScript", level: "95%" },
+  { name: "TailWind Css", level: "70%" },
+  { name: "JavaScript", level: "90%" },
   { name: "React JS", level: "85%" },
-  { name: "PHP", level: "40%" },
-  { name: "Codeigniter 03", level: "60%" },
+  { name: "Next Js", level: "80%" },
+  { name: "Node Js", level: "80%" },
+  { name: "Express Js", level: "80%" },
+  { name: "MongoDB ", level: "80%" },
+  { name: "Git Version ", level: "80%" },
   { name: "ML", level: "75%" },
   { name: "DL", level: "70%" },
-  { name: "CV", level: "65%" },
 ];
 
 const Skills = () => {

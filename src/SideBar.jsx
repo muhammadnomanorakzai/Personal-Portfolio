@@ -41,8 +41,8 @@ function Sidebar() {
         {/* Profile Section */}
         <div className="profile animate__animated animate__fadeInLeft slower --animate-delay">
           <img
-            src="./images/WhatsApp_Image_2025-10-09_at_10.38.07_AM-removebg-preview.png"
-            alt="Israr's Profile Image"
+            src="../public/images/Noman.png"
+            alt="Noman's Profile Image"
             className="profile-img"
           />
           <strong>Muhammad Noman</strong>
